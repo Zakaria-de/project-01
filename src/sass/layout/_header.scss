@@ -1,0 +1,51 @@
+@use '../base/root' as c;
+
+.page-header {
+  //   background: url("../images/cover-big.svg") center no-repeat;
+  padding: 1em;
+  background-color: c.$secondary-clr;
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.top-logo {
+  max-width: 270px;
+  max-height: 270px;
+  margin: 0 auto;
+  @media (min-width: 50em) {
+    max-width: 50px;
+    margin: 0;
+  }
+}
+
+.title {
+  color: c.$white;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: lighter;
+  padding: 0.5em;
+  border: 1px solid c.$white;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  overflow-x: auto;
+  @media (min-width: 20em) {
+    padding: 0.5em 8em 0.5em 0.5em;
+  }
+}
+.title-container {
+  margin: 1.6em auto;
+  @media (min-width: 25em) {
+    max-width: 315px;
+  }
+}
+@media (min-width: 50em) {
+  .title-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .title {
+    max-width: 45%;
+  }
+}

@@ -1,0 +1,14 @@
+@use "tailwindcss/base";
+// @use "tailwindcss/components";
+// @use "tailwindcss/utilities";
+
+@use './base/root';
+
+@use "./components/navBar.scss";
+@use "./components/menu";
+@use "./components/toggleBtn";
+
+@use './layout/header';
+@use './layout/aside';
+@use './layout/contact';
+@use './layout/footer';

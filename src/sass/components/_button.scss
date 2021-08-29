@@ -1,0 +1,29 @@
+@use '../base/root' as *;
+
+.button {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5em 0.8em;
+  display: inline-block;
+  border-radius: 0.2em;
+  min-width: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  cursor: pointer;
+  text-align: center;
+  @media (min-width: 25em) {
+    min-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+// .button--secondary {
+//   color: $secondary-clr;
+//   border: 1px solid $secondary-clr;
+//   padding: 0.3em 0.6em;
+//   font-variant: unset;
+//   min-width: unset;
+//   overflow: hidden;
+//   text-indent: 11em;
+// }

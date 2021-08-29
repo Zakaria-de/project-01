@@ -1,0 +1,13 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+  @media (min-width: 45em) {
+    font-size: 1em;
+  }
+}
+$brand-color: hsl(0, 100%, 50%);
+$secondary-clr: hsla(0, 0%, 0%, 0.741);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 50%);
+$light-gray: hsl(0, 0%, 98%);

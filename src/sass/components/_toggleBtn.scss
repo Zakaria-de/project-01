@@ -1,0 +1,22 @@
+@use "../base/root" as c;
+
+.nav-toggle {
+  width: 20px;
+  height: 18px;
+  overflow: hidden;
+  text-indent: 10em;
+  padding: 1.4em;
+  cursor: pointer;
+  background: url(../images/icon-hamburger.svg) center no-repeat;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 22;
+  background-color: c.$brand-color;
+  border-bottom-left-radius: 0.5em;
+  @media (min-width: 50em) {
+    display: none;
+  }
+}
