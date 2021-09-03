@@ -1,4 +1,6 @@
 import "../sass/styles.scss";
+import './emailJs'
+import './chartJs'
 
 const toggleBtn = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav-top");

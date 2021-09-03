@@ -12,3 +12,8 @@
 @use './layout/aside';
 @use './layout/contact';
 @use './layout/footer';
+
+.chart-container{
+    max-width: 400px;
+    margin: 1em auto;
+}

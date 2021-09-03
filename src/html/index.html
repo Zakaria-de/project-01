@@ -3,8 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=devic  e-width, initial-scale=1.0">
   <meta rel="icon" type="image/svg" href="./src/images/big-logo.svg">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('user_sgiblJ1IS5J8BFScW5nI3');
+      })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <title>Designer</title>
 </head>
 
@@ -95,6 +104,10 @@
     </div>
     <button class="button main__button">see all</button>
   </main>
+  
+  <div class="chart-container">
+    <canvas id="myChart" width="400" height="400"></canvas>
+  </div>
   <section class="contact">
     <h2>get a service</h2>
     <div class="contact__inner">
@@ -108,12 +121,13 @@
           <p>Ayoub.Graphist@gmail.com</p>
         </div>
       </div>
-      <form>
-        <input type="text" placeholder="full name" name="fullName" id="" required>
-        <input type="email" placeholder="email address" name="emailAddress" id="" required>
+      <form class="contact-form">
+        <input type="hidden" name="contact_number">
+        <input type="text" placeholder="full name" name="user_name" id="" required>
+        <input type="email" placeholder="email address" name="user_email" id="" required>   
         <textarea name="message" placeholder="your request" id="" cols="25" rows="10" required></textarea>
         <button class="button">Submit</button>
-      </form>
+      </form> 
     </div>
   </section>
   <footer class="page-footer">
