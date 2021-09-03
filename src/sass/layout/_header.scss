@@ -36,6 +36,10 @@
 }
 .title-container {
   margin: 1.6em auto;
+  background: url(../images/cover-web.svg) no-repeat center center;
+  background-size: contain;
+  padding: 8em;
+  // background-color: yellow;
   @media (min-width: 25em) {
     max-width: 315px;
   }

@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin          = require('html-webpack-plugin');
 const MiniCssExtractPlugin       = require('mini-css-extract-plugin');
-const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
+// const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 const env = process.env.NODE_ENV;
 
@@ -45,7 +45,7 @@ module.exports = {
   },
 
   plugins: [
-    new WebpackBuildNotifierPlugin(),
+    // new WebpackBuildNotifierPlugin(),
 
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].min.css'
