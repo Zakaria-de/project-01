@@ -2,10 +2,11 @@
 
 .nav-top {
   position: relative;
+  margin-bottom: 11em;
   @media (min-width: 50em) {
     display: flex;
-    background-color: violet;
-    align-items: flex-start;
+    // background-color: violet;
+    align-items: flex-end;
     justify-content: space-between;
   }
 }
@@ -14,7 +15,5 @@
   transform: rotateY(0deg);
 }
 .nav-top.is-open .nav-toggle {
-  transition: all 0.8s ease-out;
-  background: url(../images/icon-close.svg) center no-repeat;
-  background-color: darken(c.$brand-color, 5);
+  transform: rotateZ(60deg);
 }

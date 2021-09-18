@@ -7,13 +7,73 @@
 @use "./components/navBar.scss";
 @use "./components/menu";
 @use "./components/toggleBtn";
+@use "./components/icon";
+@use "./components/chart";
+@use "./components/plate";
 
 @use './layout/header';
 @use './layout/aside';
+@use './layout/main';
 @use './layout/contact';
 @use './layout/footer';
 
-.chart-container{
-    max-width: 400px;
-    margin: 1em auto;
+
+
+
+
+
+.banner-container{
+  position: relative;
+}
+.banner{
+    display:inline-block;
+  border-top:400px solid red;
+  border-left:100vw solid black;
+  // position: relative;
+}
+.banner__inner{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  padding: 1em;
+  &>h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .04em;
+    font-weight: 700;
+
+  }
+  &>p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 4em;
+  }
+
+
+}
+
+//Utilities
+.title{
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize; 
+  margin-bottom: 1.4rem;
+}
+.text-red{
+  color: red;
+}
+.flip{
+  transform: scale(.6) rotateZ(360deg);
+  
+}
+.checked{
+  background: url(../images/tick.svg) no-repeat center center;
+  background-size: contain;
+    min-height: 4em;
+    border: 0;
+    color: transparent;
 }

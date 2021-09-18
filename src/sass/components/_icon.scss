@@ -1,0 +1,29 @@
+.icon--phone {
+    background: url('../images/phone-call.svg');
+}
+.icon--email {
+    background: url('../images/mail.svg');
+}
+.icon--facebook {
+    background: url('../images/facebook.svg');
+}
+.icon--instagram {
+    background: url('../images/instagram.svg');
+}
+.icon--whatsapp {
+    background: url('../images/whatsapp.svg');
+}
+.icon {
+    padding: 1em;
+    margin: 0.3em;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    transform: scale(1);
+    transition: transform .2s ease-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}

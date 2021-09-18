@@ -1,19 +1,20 @@
+ 
 
 const data = {
     labels: [
-      'Red',
-      'Blue',
-      'Yellow',
+      'Illustrator',
+      'AdobePremium',
+      'InDesign',
       'PhotoShop'
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 50, 100,80],
+      data: [200, 50, 100,180],
       backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)',
-        'rgb(229, 14, 236)'
+        'rgb(0, 0, 0)',
+        'rgb(255, 0, 0)',
+        'rgb(255, 255, 255)',
+        'rgb(0, 0, 255)'
       ],
       hoverOffset: 4
     }]
@@ -22,7 +23,7 @@ const data = {
   
   // <block:config:0>
   const config = {
-    type: 'pie',
+    type: 'doughnut',
     data: data,
   };
   // </block:config>

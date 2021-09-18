@@ -1,6 +1,8 @@
 import "../sass/styles.scss";
 import './emailJs'
 import './chartJs'
+import './anime'
+import './fadeOut'
 
 const toggleBtn = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav-top");
@@ -8,6 +10,7 @@ const content = document.querySelector(".aside-content");
 const transText = document.querySelector(".translated-text");
 const transTextHeight = transText.scrollHeight;
 const link = document.querySelector(".showMore-link");
+
 
 link.addEventListener("click", () => {
   content.classList.toggle("is-shown");

@@ -5,13 +5,19 @@
 }
 @media (min-width: 50em) {
   .aside {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
+    // display: flex;
+    // max-width: 900px;
+    // margin: 0 auto;
     /* background-color: yellow; */
-    position: relative;
-    padding: 0;
-    margin-bottom: 5rem;
+    // position: relative;
+    padding: 0 6em;
+    // margin-bottom: 5rem;
+    &__inner{
+    display: flex;
+    // max-width: 900px;
+    // margin: 0 auto;
+
+    }
   }
 }
 .aside-content {
@@ -32,7 +38,7 @@
       margin: 0.6em 0;
     }
   }
-  & > h2 {
+  & >div >h2 {
     font-size: 1.5em;
     &::first-letter {
       font-size: 1.7em;
@@ -45,22 +51,19 @@
 
 @media (min-width: 50em) {
   .aside-content {
-    transform: translateX(-163px);
-    /* display: inline-block; */
+    transform: translate(-98px,124px);
     padding: 1em;
-    position: absolute;
-    bottom: -2em;
-    right: -18em;
-    padding: 4em;
     text-align: left;
-    max-width: 450px;
+    max-width: 390px;
+    background-color: yellowgreen;
   }
   .aside-content > h2 {
     text-align: inherit;
   }
 }
-.aside-content > p {
-  line-height: 1.6;
+.aside-content  p {
+  line-height: 1.9  ;
+  font-size: 1rem;
 }
 .aside-img {
   // background: url(./images/mobile/image-interactive.jpg) center no-repeat;
@@ -72,7 +75,9 @@
   .aside-img {
     //   background: url(./images//desktop/image-interactive.jpg) no-repeat;
     background-size: contain;
-    padding: 18em 27em;
+    // padding: 18em 27em;
+    display: inline-block;
+    padding: 10em;
     background-color: blue;
     //   background-position: left;
   }
@@ -83,7 +88,8 @@
   overflow: hidden;
   text-indent: 11em;
   // border-bottom: 4px solid c.$brand-color;
-  background: url(../images/hand-point-down.svg) center center no-repeat;
+  background: url(../images/ellipsis-1.svg)  no-repeat center center;
+  background-size: contain;
   border-radius: 0.6em;
   padding-bottom: 0.3em;
   margin: 0.5em auto;
@@ -91,7 +97,7 @@
   transition: transform 0.2s ease-out;
   transform: rotateZ(0deg);
 }
-.aside-content.is-shown > .showMore-link {
+.aside-content.is-shown  .showMore-link {
   // background: url(../images/hand-point-up.svg) center center no-repeat;
   transform: rotateZ(180deg);
 }

@@ -11,7 +11,7 @@ module.exports = {
 
   output: {
     publicPath: '/',
-    filename: env === 'development' ? 'js/bundle.js' : 'js/bundle.[contenthash].min.js',
+    filename: env === 'development' ? 'js/[name].js' : 'js/bundle.[contenthash].min.js',
     chunkFilename: env === 'development' ? 'js/[name].js' : 'js/[name].[contenthash].min.js'
   },
 

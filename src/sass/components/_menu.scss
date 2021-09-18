@@ -1,53 +1,75 @@
 @use '../base/root' as c;
 
 .menu__inner {
-  padding: 2em;
-  list-style: none;
-  margin-top: 12em;
-  background-color: c.$secondary-clr;
-  color: c.$white;
+    padding: 2em;
+    list-style: none;
+    margin-top: 12em;
+    color: c.$white;
+    background-color: c.$secondary-clr;
 
-  & > li + li {
-    margin-top: 0.8em;
-  }
-  & > li > a {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-  }
+
+    & > li + li {
+        margin-top: 0.8em;
+    }
+    & > li > a {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
 }
 
-@media (min-width: 50em) {
-  .menu__inner {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    align-self: flex-start;
-  }
-  .menu__inner > li + li {
-    margin-top: 0;
-    margin-left: 1.8em;
-  }
-  .menu__inner > li > a {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
+@media(min-width: 50em) {
+    .menu__inner {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        align-self: flex-start;
+        background-color: transparent;
+        & > li:hover > a::after{
+          transform: scale(1);
+      }
+    }
+
+
+    .menu__inner > li + li {
+        margin-top: 0;
+        margin-left: 1.8em;
+    }
+    .menu__inner > li > a {
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: 0.1em;
+        position: relative;
+        transition: color .3s ease-out;
+        &::after {
+            content: " ";
+            min-width: 100%;
+            background-color: c.$white;
+            min-height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scale(0);
+            transition: transform 0.3s ease-out;
+        }
+        &:hover{
+          color: c.$black;
+        }
+    }
 }
 
 .menu {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  // min-height: 100vh;
-  transform: perspective(45px) rotateY(90deg);
-  transform-origin: left;
-  transition: transform 0.3s ease-out;
-
-  @media (min-width: 50em) {
-    transform: unset;
-    position: static;
-    background-color: transparent;
-  }
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // min-height: 100vh;
+    transform: perspective(45px) rotateY(90deg);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+    @media(min-width: 50em) {
+        transform: unset;
+        position: static;
+        // background-color: transparent;
+    }
 }

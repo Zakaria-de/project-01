@@ -1,0 +1,10 @@
+@use "../base/root" as c;
+
+.chart-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 4em 1em;
+    @media (min-width:25em) {
+        
+    }
+}

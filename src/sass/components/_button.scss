@@ -12,9 +12,24 @@
   font-variant: small-caps;
   cursor: pointer;
   text-align: center;
+  transition: all .4s ease-out;
   @media (min-width: 25em) {
     min-width: 50%;
     margin: 0 auto;
+  }
+  @media (min-width: 50em) {
+  padding: 0 .6em;
+  transition: all .2s ease-out;
+  &:hover{
+    color: $brand-color;
+    background-color: $white;
+    // border:$brand-color;
+  }
+  &:active,&:focus{
+    box-shadow: 0 0 2px 5px rgba($black, 0.7);
+    // border: $black;
+
+  }
   }
 }
 
@@ -27,3 +42,7 @@
 //   overflow: hidden;
 //   text-indent: 11em;
 // }
+
+.button--cta{
+ border-radius: 0;
+}

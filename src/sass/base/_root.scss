@@ -1,13 +1,28 @@
-:root {
-  box-sizing: border-box;
-  font-size: calc(1vw + 0.6em);
-  @media (min-width: 45em) {
-    font-size: 1em;
-  }
-}
 $brand-color: hsl(0, 100%, 50%);
 $secondary-clr: hsla(0, 0%, 0%, 0.741);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 50%);
+$extra-light-gray: hsla(0, 0%, 92%, 0.522);
 $light-gray: hsl(0, 0%, 98%);
+$text-clr:#2c2b2b;
+
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+  font-family: system-ui;
+
+  scroll-behavior: smooth;
+  @media (min-width: 45em) {
+    font-size: 1em;
+  }
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $extra-light-gray;
+  color: $text-clr;
+}
+
