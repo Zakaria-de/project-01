@@ -78,7 +78,6 @@
     // padding: 18em 27em;
     display: inline-block;
     padding: 10em;
-    background-color: blue;
     //   background-position: left;
   }
 }
@@ -88,10 +87,11 @@
   overflow: hidden;
   text-indent: 11em;
   // border-bottom: 4px solid c.$brand-color;
-  background: url(../images/ellipsis-1.svg)  no-repeat center center;
+  background: url(../images/ellipsis.svg)  no-repeat center center;
+  background-color: blue;
   background-size: contain;
   border-radius: 0.6em;
-  padding-bottom: 0.3em;
+  padding: 1.4em;
   margin: 0.5em auto;
   cursor: pointer;
   transition: transform 0.2s ease-out;
