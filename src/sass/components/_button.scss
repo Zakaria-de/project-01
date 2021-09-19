@@ -14,11 +14,11 @@
   text-align: center;
   transition: all .4s ease-out;
   @media (min-width: 25em) {
-    min-width: 50%;
+    min-width: 11em;
     margin: 0 auto;
   }
   @media (min-width: 50em) {
-  padding: 0 .6em;
+  padding: .3em .6em;
   transition: all .2s ease-out;
   &:hover{
     color: $brand-color;
@@ -45,4 +45,13 @@
 
 .button--cta{
  border-radius: 0;
+ @media (min-width: 50em) {
+&:hover{
+  background-color: $white;
+  color: $black;
+} 
+&:hover > span{
+color: $brand-color;
+}
+}
 }
