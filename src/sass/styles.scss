@@ -4,6 +4,7 @@
 
 @use './base/root';
 
+@use "./components/container";
 @use "./components/navBar.scss";
 @use "./components/menu";
 @use "./components/toggleBtn";
@@ -45,6 +46,12 @@
     font-size: 1.5rem;
     letter-spacing: .04em;
     font-weight: 700;
+    @media (min-width:25em) {
+      margin-top: -1em;
+    }
+    @media (min-width:30em) {
+    margin-top: -1.8em;
+    }
 
   }
   &>p{
