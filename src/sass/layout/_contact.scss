@@ -8,6 +8,8 @@
     @media (min-width: 50em) {
       display: flex;
       flex-direction: row-reverse;
+      max-width: 1300px;
+      margin: 0 auto;
     }
   }
   // @media (min-width: 20em) {
