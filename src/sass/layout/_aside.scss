@@ -1,7 +1,14 @@
 @use '../base/root' as c;
 
 .aside {
-  padding: 0 2em;
+  padding: 0 1em;
+  margin: 3rem auto;
+  max-width: 900px;
+
+  &__inner{
+    border-radius: .8em;
+    overflow: hidden;
+  }
 }
 @media (min-width: 50em) {
   .aside {
@@ -16,16 +23,19 @@
     display: flex;
     // max-width: 900px;
     // margin: 0 auto;
+    overflow: visible;
 
     }
   }
 }
 .aside-content {
-  padding: 1em 0;
+  padding: 1em;
   background-color: c.$white;
   max-width: 370px;
   margin: 0 auto;
   font-size: 1.3em;
+  border-radius: initial;
+
   & > .translated-text {
     height: 0;
     text-align: right;
@@ -51,11 +61,12 @@
 
 @media (min-width: 50em) {
   .aside-content {
-    transform: translate(-98px,124px);
+    transform: translate(-144px, 62px);
     padding: 1em;
     text-align: left;
     max-width: 390px;
-    background-color: yellowgreen;
+    min-width: 370px;
+    // background-color: yellowgreen;
   }
   .aside-content > h2 {
     text-align: inherit;
@@ -63,13 +74,15 @@
 }
 .aside-content  p {
   line-height: 1.9  ;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .aside-img {
   // background: url(./images/mobile/image-interactive.jpg) center no-repeat;
   //   background-size: contain;
   padding: 7em;
   background-color: yellow;
+  border-radius: initial;
+
 }
 @media (min-width: 50em) {
   .aside-img {
@@ -77,7 +90,7 @@
     background-size: contain;
     // padding: 18em 27em;
     display: inline-block;
-    padding: 10em;
+    padding: 13em;
     //   background-position: left;
   }
 }

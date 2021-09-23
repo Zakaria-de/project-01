@@ -20,6 +20,8 @@
   @media (min-width: 50em) {
   padding: .3em .6em;
   transition: all .2s ease-out;
+
+  }
   &:hover{
     color: $brand-color;
     background-color: $white;
@@ -29,7 +31,6 @@
     box-shadow: 0 0 2px 5px rgba($black, 0.7);
     // border: $black;
 
-  }
   }
 }
 
