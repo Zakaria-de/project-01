@@ -6,6 +6,7 @@ import './fadeOut'
 
 const toggleBtn = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav-top");
+const navLinks = document.querySelectorAll(".nav-top a");
 const content = document.querySelector(".aside-content");
 const transText = document.querySelector(".translated-text");
 const transTextHeight = transText.scrollHeight;
@@ -24,3 +25,7 @@ link.addEventListener("click", () => {
 toggleBtn.addEventListener("click", (e) => {
   nav.classList.toggle("is-open");
 });
+
+navLinks.forEach(link => link.addEventListener('click',()=>{
+  nav.classList.remove('is-open')
+}))
