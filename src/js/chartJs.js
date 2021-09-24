@@ -11,10 +11,10 @@ const data = {
       label: 'My First Dataset',
       data: [200, 50, 100,180],
       backgroundColor: [
-        'rgb(0, 0, 0)',
-        'rgb(255, 0, 0)',
-        'rgb(255, 255, 255)',
-        'rgb(0, 0, 255)'
+        '#ff8d00',
+        '#0057fff7',
+        '#f9ff1bf7',
+        '#51a9c5f7'
       ],
       hoverOffset: 4
     }]
@@ -23,7 +23,7 @@ const data = {
   
   // <block:config:0>
   const config = {
-    type: 'doughnut',
+    type: 'pie',
     data: data,
   };
   // </block:config>
