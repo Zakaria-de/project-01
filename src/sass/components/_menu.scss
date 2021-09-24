@@ -30,6 +30,16 @@
         & > li:hover > a::after{
           transform: scale(1);
       }
+      .link-featured{
+        & > a::after{
+            transform: scale(1);
+          }
+          & > a{
+          font-weight: 700;
+          color: c.$black;
+          font-variant: small-caps;
+          }
+      }
     }
 
 
