@@ -1,49 +1,53 @@
 @use '../base/root' as c;
 
-.plate{
+.plate {
     background-color: c.$white;
-    padding: 1em;
-    border-radius: .4em;
+    padding: .8em;
+    // border-radius: 0.4em;
     min-height: 7em;
     position: relative;
     overflow: hidden;
     max-width: 320px;
     margin: 1em auto;
-    
-    &__inner > img{
-        transform: scale(.6 );
-        margin: .2em 0;
-        transition: transform .3s ease-out;
-    }
-    &__inner.fadeOut > &__cover{
+
+    &__inner.fadeOut > &__cover {
         opacity: 0;
         visibility: hidden;
     }
-    &__inner.fadeOut > img{
-    transform: scale(1);
+    &__inner.fadeOut > .scene {
+        transform: scale(1);
     }
 
-    &__cover{
+    &__cover {
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: rgb(0 0 0 / 74%);
+        // background-color: rgb(0 0 0 / 74%);
+        background-color: #9ca3afb8;
         color: c.$white;
         text-align: center;
         font-size: 1.8em;
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
         align-items: center;
         visibility: visible;
         opacity: 1;
-        transition: all .3s ease-out;
-     
-       
+        transition: all 0.3s ease-out;
+        & > h2 {
+            font-family: monospace;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            color: gray;
+            font-weight: bold;
+            text-align: center;
+            mix-blend-mode: difference;
+        }
+
     }
 
-    
+
 }

@@ -3,6 +3,7 @@ import './emailJs'
 import './chartJs'
 import './anime'
 import './fadeOut'
+import './flipOver'
 
 const toggleBtn = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav-top");

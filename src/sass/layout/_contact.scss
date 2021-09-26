@@ -66,35 +66,40 @@ form {
     }
     & > input::placeholder,
     textarea::placeholder {
-        text-transform: uppercase;
-        @media(min-width: 20em) {
-            text-transform: capitalize;
-        }
+        color: c.$white;
+        text-transform: capitalize;
+        letter-spacing: 0.08em;
     }
 }
 form > input,
 textarea {
-    padding: 0.4em;
+    padding: 0.5em 0.8em;
     max-width: 100%;
     min-height: 3em;
     margin: 0.5em 0;
     font-size: 1.1rem;
+    outline: 0;
+    border: 0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: c.$white;
+    background-color: #E60000;
+    box-shadow: inset 0 0 5px 1px c.$white;
+    transition: all 0.3s ease-out;
+
     @media(min-width: 11em) {
         min-width: 100%;
     }
-    // @media(min-width: 20em) {
-    //     min-height: 2em;
-    // }
-    outline: 0;
-    border: 0;
-    transition: all 0.3s ease-out;
+
     &:active,
     &:focus {
-        box-shadow: 0 0 1px 4px #00000082;
+        box-shadow: 0 0 7px 4px c.$white;
+        background-color: c.$brand-color;
+
     };
-    @media (min-width: 50em) {
+    @media(min-width: 50em) {
         font-size: 0.9rem;
-  
+
     }
 
 }

@@ -11,6 +11,7 @@
 @use "./components/icon";
 @use "./components/chart";
 @use "./components/plate";
+@use "./components/card";
 
 @use './layout/header';
 @use './layout/aside';
@@ -79,10 +80,31 @@
   transform: scale(.6) rotateZ(360deg);
   
 }
+.flip-over{
+        transform: perspective(100px) rotateY(180deg) !important;
+}
 .checked{
   background: url(../images/tick.svg) no-repeat center center;
   background-size: contain;
     min-height: 4em;
     border: 0;
     color: transparent;
+}
+.bomb{
+  // opacity: 0;
+  background-color: rgba(128, 128, 128, 0.69);
+  color: #fff;
+  // min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 60%;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  visibility: hidden  ;
 }
