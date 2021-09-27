@@ -1,10 +1,4 @@
-# Webpack Starter Project
-
-This is my personal Webpack starter setup for using:
-- [ES6](https://developer.mozilla.org/fr/docs/Web/JavaScript) compiled through [Babel](https://babeljs.io)
-- [Sass](https://sass-lang.com)
-- [PostCSS](https://postcss.org)
-- [Tailwind CSS](https://tailwindcss.com)
+# Portfolio
 
 To get started, clone the project and install the dependencies:
 
